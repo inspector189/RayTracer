@@ -1,7 +1,7 @@
 # RayTracer result:
 
-###First Result: 
+### First Result: 
 ![RayTracer result](./result.png)
 
-###Second Result:
+### Second Result:
 ![RayTracer result](./newResult.png)
