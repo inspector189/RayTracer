@@ -1,7 +1,7 @@
 # RayTracer result:
 
-### First Result: 
+### First Result (no material): 
 ![RayTracer result](./result.png)
 
-### Second Result:
+### Second Result (diffuse material):
 ![RayTracer result](./newResult.png)
