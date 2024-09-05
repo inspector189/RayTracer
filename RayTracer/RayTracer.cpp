@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include "Scene.h"
+#include "Math.h"
 
 int main()
 {

@@ -1,7 +1,5 @@
 #include "Camera.h"
 #include "Math.h"
-#define GLM_ENABLE_EXPERIMENTAL
-#include <gtx/norm.hpp>
 
 Camera::Camera(const glm::vec3& cameraPosition, const glm::vec3& lookAt, const glm::vec3& up, float fov, float aspectRatio, float aperture, float focusDistance)
 

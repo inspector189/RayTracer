@@ -18,7 +18,5 @@ private:
 	glm::vec3 m_u;
 	glm::vec3 m_v;
 	float m_lensRadius;
-
-	glm::vec3 RandomInUnitDisk() const;
 };
 

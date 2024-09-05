@@ -1,6 +1,7 @@
 #include "Sphere.h"
 
-Sphere::Sphere(const glm::vec3& center, float radius)
+Sphere::Sphere(const glm::vec3& center, float radius, const glm::vec3& albedo)
+    : m_diffuseMaterial(albedo)
 {
 	m_center = center;
 	m_radius = radius;
@@ -30,5 +31,6 @@ bool Sphere::hit(const Ray& ray, float minTime, float maxTime, HitRecord* hitRec
     hitRecord->m_time = root;
     hitRecord->m_point = ray.at(root);
     hitRecord->m_normal = (hitRecord->m_point - m_center)/m_radius;
+    hitRecord->m_attenuation = m_diffuseMaterial.scatter();
     return true;
 }

@@ -134,6 +134,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="DiffuseMaterial.cpp" />
+    <ClCompile Include="Math.cpp" />
     <ClCompile Include="Ray.cpp" />
     <ClCompile Include="RayTracer.cpp" />
     <ClCompile Include="Scene.cpp" />
@@ -141,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="DiffuseMaterial.h" />
     <ClInclude Include="Math.h" />
     <ClInclude Include="Ray.h" />
     <ClInclude Include="Scene.h" />
