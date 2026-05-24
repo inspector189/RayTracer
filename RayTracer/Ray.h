@@ -1,11 +1,11 @@
 #pragma once
-#include <glm.hpp>
+#include <glm/glm.hpp>
 
 class Ray
 {
 public:
     Ray(const glm::vec3& origin, const glm::vec3& direction);
-
+    Ray();
     glm::vec3 at(float t) const;
     glm::vec3 getDirection() const;
     glm::vec3 getOrigin() const;

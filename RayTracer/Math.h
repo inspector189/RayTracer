@@ -1,7 +1,7 @@
 #pragma once
-#include <glm.hpp>
+#include <glm/glm.hpp>
 #define GLM_ENABLE_EXPERIMENTAL
-#include <gtx/norm.hpp>
+#include <glm/gtx/norm.hpp>
 #include <random>
 
 
@@ -25,6 +25,14 @@ inline int Random<int>() {
 template <class T>
 inline T Random(T min, T max) {
     return min + (max - min) * Random<T>();
+}
+
+inline glm::vec3 RandomVec3(float min = 0.0f, float max = 1.0f) {
+    return glm::vec3(
+        Random<float>(min, max),
+        Random<float>(min, max),
+        Random<float>(min, max)
+    );
 }
 
 glm::vec3 RandomInUnitDisk();

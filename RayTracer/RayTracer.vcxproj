@@ -109,6 +109,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Mentoring\cpp\RayTracer\glm-master</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,7 +135,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="DiffuseMaterial.cpp" />
+    <ClCompile Include="Material.cpp" />
     <ClCompile Include="Math.cpp" />
     <ClCompile Include="Ray.cpp" />
     <ClCompile Include="RayTracer.cpp" />
@@ -143,7 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="DiffuseMaterial.h" />
+    <ClInclude Include="Material.h" />
     <ClInclude Include="Math.h" />
     <ClInclude Include="Ray.h" />
     <ClInclude Include="Scene.h" />
