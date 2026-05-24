@@ -3,6 +3,8 @@
 # First result - without any material
 ![No Material](result.png)
 
+------------------------------------
+
 ![Second Result](newResult.png)
 
 ![More Balls](finalResult.png)
@@ -19,6 +21,7 @@
 
 ![Three Balls](ThreeBalls.png)
 
+------------------------------------
 # Last result with all materials and more balls 
 
 ![Last Result](LastResult.png)
