@@ -4,6 +4,7 @@
 ![No Material](result.png)
 
 ------------------------------------
+## All results from no material to final result with multiple materials
 
 ![Second Result](newResult.png)
 
@@ -15,7 +16,7 @@
 
 ![More Metals](MoreMetals.png)
 
-![More Materials](DielectricAndOther.png)
+![More Materials](DielectrictAndOther.png)
 
 ![Another Perspective](AnotherPerspective.png)
 
