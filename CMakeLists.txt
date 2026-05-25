@@ -101,7 +101,9 @@ else()
 	endif()
 
 endif()
-
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    add_compile_options(-Wno-poison-system-directories)
+endif()
 option(GLM_ENABLE_LANG_EXTENSIONS "Enable language extensions" OFF)
 option(GLM_DISABLE_AUTO_DETECTION "Disable platform, compiler, arch and C++ language detection" OFF)
 
