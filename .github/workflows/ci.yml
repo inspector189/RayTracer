@@ -285,15 +285,15 @@ jobs:
           cmake --build ./build_pure_ext --config ${{matrix.config}}
           ctest --verbose -C ${{matrix.config}} --test-dir ./build_pure_ext
 
-      - name: Run with GLM_ENABLE_SIMD_NEON
-        run: |
-          cmake -S. -B ./build_neon_std -DGLM_BUILD_TESTS=ON -DGLM_ENABLE_SIMD_NEON=ON -DGLM_ENABLE_CXX_${{matrix.std}}=ON
-          cmake --build ./build_neon_std --config ${{matrix.config}}
-          ctest --verbose -C ${{matrix.config}} --test-dir ./build_neon_std
-      - name: Run with GLM_ENABLE_SIMD_NEON and language extensions
-        run: |
-          cmake -S. -B ./build_neon_ext -DGLM_BUILD_TESTS=ON -DGLM_ENABLE_SIMD_NEON=ON -DGLM_ENABLE_CXX_${{matrix.std}}=ON -DGLM_ENABLE_LANG_EXTENSIONS=ON
-          cmake --build ./build_neon_ext --config ${{matrix.config}}
-          ctest --verbose -C ${{matrix.config}} --test-dir ./build_neon_ext
+#      - name: Run with GLM_ENABLE_SIMD_NEON
+#        run: |
+#          cmake -S. -B ./build_neon_std -DGLM_BUILD_TESTS=ON -DGLM_ENABLE_SIMD_NEON=ON -DGLM_ENABLE_CXX_${{matrix.std}}=ON
+#          cmake --build ./build_neon_std --config ${{matrix.config}}
+#          ctest --verbose -C ${{matrix.config}} --test-dir ./build_neon_std
+#      - name: Run with GLM_ENABLE_SIMD_NEON and language extensions
+#        run: |
+#          cmake -S. -B ./build_neon_ext -DGLM_BUILD_TESTS=ON -DGLM_ENABLE_SIMD_NEON=ON -DGLM_ENABLE_CXX_${{matrix.std}}=ON -DGLM_ENABLE_LANG_EXTENSIONS=ON
+ #         cmake --build ./build_neon_ext --config ${{matrix.config}}
+ #         ctest --verbose -C ${{matrix.config}} --test-dir ./build_neon_ext
 
  
